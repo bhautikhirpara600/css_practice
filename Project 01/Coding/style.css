@@ -5,14 +5,170 @@
 body {
     margin: 0;
     font-family: "DM Sans", serif;
+    background-color: rgba(249, 238, 225, 0.4);
 }
 
 .grid-div {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    display: grid;
+    gap: 24px;
+    padding: 20px;
+}
+
+.grid-item {
+    border-radius: 10px;
 }
 
 .grid-item-1 {
     background-color: hsl(256, 67%, 59%);
+    text-align: center;
+    padding: 32px;
+}
+
+.grid-item-1 h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    margin-block: 0 30px;
+}
+
+.grid-item-1 h2 span {
+    color: hsl(39, 100%, 71%);
+}
+
+.grid-item-1 img {
+    max-width: 180px;
+}
+
+.grid-item-1 p {
+    color: hsl(31, 66%, 93%);
+    margin: 0;
+    font-size: 20px;
+}
+
+.grid-item-2 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px;
+}
+
+.grid-item-2 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-block: 20px 0;
+}
+
+.grid-item-3 {
+    background-color: hsl(39, 100%, 71%);
+    padding: 16px;
+    max-height: 255px;
+    overflow: hidden;
+}
+
+.grid-item-3 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.grid-item-3 img {
+    width: 230px;
+}
+
+.grid-item-4 {
+    background-color: hsl(254, 88%, 90%);
+    padding: 16px;
+    text-align: center;
+}
+
+.grid-item-4 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.grid-item-4 p {
+    font-size: 20px;
+}
+
+.grid-item-5 {
+    background-color: hsl(256, 67%, 59%);
+    padding: 20px 48px;
+    text-align: center;
+}
+
+.grid-item-5 h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: white;
+    line-height: 30px;
+}
+
+.grid-item-6 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+.grid-item-6 h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.grid-item-6 p {
+    font-size: 20px;
+    margin-block: 10px;
+}
+
+.grid-item-6 img {
+    width: 200px;
+}
+
+.grid-item-7 {
+    background-color: hsl(31, 66%, 93%);
+    padding: 20px 24px;
+}
+
+.grid-item-7 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-block: 20px;
+}
+
+.grid-item-7 h3 i {
+    color: hsl(256, 67%, 59%);
+}
+
+.grid-item-7 img {
+    width: 200px;
+}
+
+.grid-item-8 {
+    background-color: hsl(39, 100%, 71%);
+    padding: 20px;
+}
+
+.grid-item-8 h3 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.grid-item-8 img {
+    width: 200px;
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 100%;
+    }
+    .grid-item {
+        width: 100%;
+        max-width: 350px;
+    }
 }
