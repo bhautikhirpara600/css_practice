@@ -30,6 +30,7 @@ body {
 
 .grid-item-1 h2 {
     font-size: 48px;
+    line-height: 48px;
     color: white;
     font-weight: 500;
     margin-block: 0 30px;
@@ -56,6 +57,7 @@ body {
 
 .grid-item-2 h3 {
     font-size: 24px;
+    line-height: 24px;
     font-weight: 600;
     margin-block: 20px 0;
 }
@@ -63,12 +65,13 @@ body {
 .grid-item-3 {
     background-color: hsl(39, 100%, 71%);
     padding: 16px;
-    max-height: 255px;
+    max-height: 240px;
     overflow: hidden;
 }
 
 .grid-item-3 h3 {
     font-size: 24px;
+    line-height: 24px;
     font-weight: 600;
     margin-top: 0;
 }
@@ -104,7 +107,7 @@ body {
     font-weight: 500;
     margin-bottom: 0;
     color: white;
-    line-height: 30px;
+    line-height: 32px;
 }
 
 .grid-item-6 {
@@ -163,12 +166,103 @@ body {
     width: 200px;
 }
 
-@media (max-width: 500px) {
-    img {
-        width: 100%;
+img {
+    width: 100%;
+}
+.grid-item {
+    width: 100%;
+    max-width: 350px;
+}
+
+@media (min-width: 500px) {
+    .grid-item-1 {
+        grid-column: 2 / span 2;
+        padding-inline: 42px;
+        max-width: 500px;
     }
-    .grid-item {
+    .grid-item-2 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 2;
+        max-width: 240px;
+        overflow: hidden;
+    }
+    .grid-item-2 img {
+        width: 300px;
+    }
+    .grid-item-2 h3 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .grid-item-3 {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 2;
+        max-width: 240px;
+        overflow: hidden;
+    }
+    .grid-item-3 h3 {
+        font-size: 32px;
+    }
+    .grid-item-3 img {
+        width: 210px;
+    }
+    .grid-item-4 {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 3;
+        width: 200px;
+        overflow: hidden;
+        padding: 24px;
+    }
+    .grid-item-4 img {
+        width: 280px;
+    }
+    .grid-item-4 p {
+        font-size: 18px;
+    }
+    .grid-item-4 h3 {
+        line-height: 24px;
+    }
+    .grid-item-5 {
+        grid-column: 3 / span 2;
+        grid-row: 4 / span 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: justify;
+        max-width: 460px;
+    }
+    .grid-item-5 img {
+        width: 180px;
+        margin-right: 20px;
+    }
+    .grid-item-5 h3 {
+        font-size: 32px;
+        padding-block: 22px;
+        margin-block: 22px;
+    }
+    .grid-item-6 {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+    .grid-item-6 p {
+        font-size: 18px;
+    }
+    .grid-item-7 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+        max-width: 200px;
+    }
+    .grid-item-7 img {
         width: 100%;
-        max-width: 350px;
+        margin-bottom: 64px;
+    }
+    .grid-item-8 {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 2;
+        max-width: 200px;
+    }
+    .grid-item-8 img {
+        width: 100%;
+        margin-top: 32px;
     }
 }
