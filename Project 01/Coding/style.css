@@ -4,4 +4,15 @@
 
 body {
     margin: 0;
+    font-family: "DM Sans", serif;
+}
+
+.grid-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-1 {
+    background-color: hsl(256, 67%, 59%);
 }
