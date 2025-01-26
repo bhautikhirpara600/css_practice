@@ -241,7 +241,7 @@ button {
     }
     .copy-text, .snippet-text, .computer-img-div, .clipboard-text-div, .device-img-div, .download-text {
         min-width: 375px;
-        padding-inline: 20px;
+        padding-inline: 16px;
     }
     .copy-btn-div, .download-btn-div {
         display: flex;
