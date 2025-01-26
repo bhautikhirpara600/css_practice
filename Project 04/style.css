@@ -4,4 +4,208 @@
 
 body {
     margin: 0;
+    font-family: "Bai Jamjuree", serif;
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 24px;
+}
+
+.header-div {
+    max-width: 1536px;
+    position: relative;
+}
+
+.bg-header-desktop {
+    width: 100%;
+    max-width: 1536px;
+}
+
+.logo-icon {
+    position: absolute;
+    bottom: 125px;
+    left: calc(50% - 63px);
+}
+
+.copy-section, .copy-text, .snippet-text, .clipboard-section, .icon-section, .icon-div, .download-section, .download-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-section, .brand-icon-div, .footer-div, .link-n-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-div, .computer-section, .footer-div {
+    margin-inline: auto;
+}
+
+.copy-text {
+    max-width: 665px;
+    text-align: center;
+}
+
+.copy-text h2 {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.copy-text p, .download-text p{
+    font-size: 18px;
+}
+
+.copy-btn-div button, .download-btn-div button {
+    padding: 14px 32px 12px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-inline: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.ios-btn {
+    background-color: hsla(171, 66%, 44%, 0.8);
+    box-shadow: 0 3px 3px 2px rgba(0, 255, 0, 0.1);
+}
+
+.mac-btn {
+    background-color: hsla(233, 100%, 69%, 0.8);
+    box-shadow: 0 3px 3px 2px rgba(0, 0, 255, 0.1);
+}
+
+.snippet-text {
+    margin-top: 80px;
+    max-width: 640px;
+    text-align: center;
+}
+
+.snippet-text h2, .clipboard-text-div h2, .download-text h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.computer-section {
+    gap: 100px;
+    margin-top: 50px;
+    max-width: 1536px;
+}
+
+.computer-text-div {
+    max-width: 350px;
+}
+
+.computer-text-div h3{
+    margin-bottom: 0;
+}
+
+.computer-text-div p {
+    margin: 10px 0 60px;
+}
+
+.clipboard-section {
+    margin-top: 100px;
+}
+
+.clipboard-text-div {
+    text-align: center;
+    max-width: 600px;
+}
+
+.device-img {
+    margin-top: 80px;
+}
+
+.icon-section {
+    margin-top: 50px;
+}
+
+.icon-div-parent {
+    display: flex;
+    gap: 30px;
+}
+
+.icon-div {
+    max-width: 300px;
+    text-align: center;
+}
+
+.img-div {
+    width: 55px;
+    height: 55px;
+}
+
+.icon-div h2 {
+    margin-bottom: 0;
+}
+
+.icon-div p {
+    font-size: 14px;
+}
+
+.blacklist {
+    margin-top: 20px;
+}
+
+.brand-icon-div {
+    gap: 80px;
+    margin-block: 100px;
+}
+
+.download-text {
+    max-width: 675px;
+}
+
+footer {
+    background-color: hsl(201, 11%, 97%);
+}
+
+.footer-div {
+    justify-content: flex-start;
+    max-width: 1050px;
+    margin-top: 130px;
+}
+
+.logo-div img {
+    width: 40%;
+}
+
+.link-div {
+    display: flex;
+}
+
+.link-div ul {
+    margin: 36px 0 16px 40px;
+}
+
+.link-div li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.link-div a {
+    text-decoration-line: none;
+    color: hsla(212, 10%, 33%, 0.8);
+    font-weight: 500;
+}
+
+.link-n-icon {
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.sm-icon-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
