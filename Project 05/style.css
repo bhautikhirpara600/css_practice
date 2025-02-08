@@ -7,19 +7,22 @@
 
 body {
     margin: 0;
-    padding-inline: 20px;
     /* font-family: "Open Sans", serif; */
     font-family: "Poppins", serif;
     color: rgb(0, 37, 46);
     /* background-color: hsl(207, 100%, 98%); */
 }
 
-.header-div, main {
+.header-div, main, footer {
     max-width: 1536px;
     margin-inline: auto;
 }
 
-.community-section, .content-section, main {
+header, main, .footer-div {
+    padding-inline: 20px;
+}
+
+.community-section, .community-photo-n-count-section, .community-build-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +112,8 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 300px;
-    min-width: 1150px;
+    max-width: 1150px;
+    margin-inline: auto;
 }
 
 .grow-together-text h2, .flowing-conversation-text h2, .your-user-text h2 {
@@ -127,4 +131,75 @@ body {
 
 .content-section .text {
     font-size: 42px;
+}
+
+footer .img-div {
+    margin-bottom: -10px;
+}
+
+.footer-div {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    font-family: "Open Sans", serif;
+}
+
+.footer-content-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.phone, .email, .sm-icon-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.email-div {
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.email p {
+    margin: 0;
+}
+
+.icon-div {
+    display: flex;
+}
+
+.sm-icon-div {
+    margin-block: 70px;
+}
+
+.huddle-div {
+    margin-top: 100px;
+}
+
+.news-letter-div {
+    margin-top: 88px;
+}
+
+.news-letter-text, .huddle-div {
+    max-width: 370px;
+}
+
+.input-email {
+    width: 300px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+}
+
+.subscribe-btn {
+    font-family: "Open Sans", serif;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
 }
