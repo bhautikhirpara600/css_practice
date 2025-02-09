@@ -10,7 +10,7 @@ body {
     /* font-family: "Open Sans", serif; */
     font-family: "Poppins", serif;
     color: rgb(0, 37, 46);
-    /* background-color: hsl(207, 100%, 98%); */
+    background-color: hsla(210, 100%, 98%, 0.5);
 }
 
 .header-div, main, footer {
@@ -48,7 +48,7 @@ header, main, .footer-div {
 .community-section {
     text-align: center;
     padding-top: 120px;
-    background-color: hsla(210, 100%, 98%, 0.5)
+    /* background-color: hsla(210, 100%, 98%, 0.5) */
 }
 
 .community-section h1 {
@@ -91,10 +91,6 @@ header, main, .footer-div {
     margin-bottom: 100px
 }
 
-.community-count-div {
-    background-color: hsla(210, 100%, 98%, 0.5);
-}
-
 .community-count-div span {
     font-size: 90px;
     font-weight: 700;
@@ -133,8 +129,10 @@ header, main, .footer-div {
     font-size: 42px;
 }
 
-footer .img-div {
+.bg-img-div img {
     margin-bottom: -10px;
+    width: 100%;
+    max-width: 1536px;
 }
 
 .footer-div {
@@ -202,4 +200,90 @@ footer .img-div {
     font-size: 16px;
     font-weight: 600;
     border-radius: 6px;
+}
+
+.header-btn, .btn, .input-email, .subscribe-btn, .icon-div-sm {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .email-div, .community-count-section, .flowing-conversation-section {
+        flex-direction: column;
+    }
+    .footer-content-div, .grow-together-section, .your-user-section {
+        flex-direction: column-reverse;
+    }
+    .header-div {
+        padding: 40px 20px;
+    }
+    .img-div {
+        padding-inline: 20px;
+    }
+    .community-section {
+        padding-top: 60px;
+    }
+    .grow-together-text, .flowing-conversation-text, .your-user-text {
+        margin-top: 100px;
+    }
+    .grow-together-section, .flowing-conversation-section, .your-user-section {
+        margin-bottom: 150px;
+    }
+    .content-section .text, .flowing-conversation-text, .grow-together-text, .your-user-text {
+        text-align: center;
+    }
+    .footer-content-div {
+        align-items: center;
+    }
+    .subscribe-btn {
+        align-self: flex-end;
+        margin-right: 40px;
+    }
+    .email-div {
+        gap: unset;
+        row-gap: 20px;
+    }
+    .community-build-section .btn {
+        margin-top: 20px;
+    }
+    .community-count-div {
+        margin-block: 40px;
+    }
+}  
+
+@media (max-width: 650px) {
+    .community-section h1, .content-section .text {
+        font-size: 30px;
+    }
+    .content-section p, .community-section p {
+       font-size: 15px;
+    }
+    .content-section h2 {
+        font-size: 28px;
+    }
+    .btn {
+        padding: 15px 50px;
+        font-size: 16px;
+    }
+    .header-div {
+        padding: 20px 0;
+    }
+    .header-div .img-div {
+        padding: 0;
+    }
+    .header-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .logo-div img {
+        width: 50%;
+    }
+    .community-count-div span {
+        font-size: 75px;
+    }
+    .community-count-div p {
+        font-size: 18px;
+    }
+    .subscribe-btn {
+        margin-right: 20px;
+    }
 }
