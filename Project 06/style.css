@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Red Hat Display", serif;
+    color: hsl(223, 47%, 23%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    position: absolute;
+    z-index: 11;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text h2 {
+    margin: 36px 0 0 0;
+    font-weight: 800;
+}
+
+.text {
+    width: 65%;
+    text-align: center;
+}
+
+.text, .price, .cancle-text {
+    color: hsl(224, 23%, 55%);
+}
+
+.days {
+    font-weight: 800;
+}
+
+.music-plan {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.annual-plan {
+    display: flex;
+    gap: 20px;
+}
+
+.annual-plan-text {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px;
+    width: 75%;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin: 30px 0 10px 0;
+    box-shadow: 0 10px 8px 8px hsl(225, 100%, 94%);
+    cursor: pointer;
+}
+
+.cancle-text {
+    font-weight: 700;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.img-div, .glass {
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.glass {
+    position: absolute;
+    z-index: 10;
+    background-color: hsla(225, 100%, 93%, 0.8);
+}
+
+@media (max-width: 450px) {
+    .card-container, .card-text {
+        max-width: 350px;
+    }
+    .glass {
+        padding: 18px;
+    }
+    .text {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .card-text h2 {
+        margin-top: 24px;
+    }
+    .cancle-text {
+        margin-bottom: 30px;
+    }
+}
