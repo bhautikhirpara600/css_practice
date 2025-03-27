@@ -174,7 +174,7 @@ img {
     max-width: 350px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1050px) {
     .grid-item-1 {
         grid-column: 2 / span 2;
         padding-inline: 42px;
